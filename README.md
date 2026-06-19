@@ -27,6 +27,18 @@
 <br>
 <br>
 
+<p align="center">
+  <a href="https://github.com/ilmanalif/BOT-Trading-AI-Metatrader5/releases/download/AI-MT5/AutoTradeAI.zip">
+    <img src="https://img.shields.io/badge/📥 Download%20AutoTradeAI.exe-FF6B35?style=for-the-badge&logo=github&logoColor=white" alt="Download">
+  </a>
+</p>
+
+<p align="center">
+  <i>Free download • Siap pakai • No installasi rumit</i>
+</p>
+
+<br>
+
 ---
 
 ## 🚀 Fitur Unggulan
