@@ -115,18 +115,19 @@
 
 ---
 
-## 🔒 Risk Management
+## 🔒 Risk Management — Sepenuhnya Bisa Kamu Atur
 
 ```
  ╔══════════════════════════════════════════╗
  ║  Daily Target    ████████░░  3%          ║
  ║  Max Daily Loss  ██████████████░░░  5%   ║
- ║  Auto Lot        ✅ Active               ║
+ ║  Lot Size        ██░░░░░░░░░░░  Fixed    ║
+ ║  TP/SL Mode      ████████░░░░  Auto AI   ║
  ║  Auto Trade      ⚡ Optional              ║
  ╚══════════════════════════════════════════╝
 ```
 
-Bot berhenti otomatis saat target harian tercapai atau loss mencapai batas. Aman.
+Tentukan sendiri target harian, batas loss, ukuran lot, jarak TP/SL, dan interval analisis. Bot akan berhenti otomatis saat target tercapai atau loss mencapai batas — kamu tinggal duduk santai.
 
 <br>
 
@@ -145,7 +146,7 @@ Bot berhenti otomatis saat target harian tercapai atau loss mencapai batas. Aman
   </tr>
   <tr>
     <td align="center" width="20%"><b>3</b></td>
-    <td width="80%">Jalankan <code>python run.py</code> atau buka <code>AutoTradeAI.exe</code></td>
+    <td width="80%">Jalankan <code>AutoTradeAI.exe</code></td>
   </tr>
   <tr>
     <td align="center" width="20%"><b>4</b></td>
