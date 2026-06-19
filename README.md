@@ -1,136 +1,180 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Auto_Trade_AI-v2.0-FF6B35?style=for-the-badge&logo=python&logoColor=white" alt="Version">
+  <img src="https://img.shields.io/badge/MetaTrader_5-Ready-00B4D8?style=for-the-badge&logo=metrod&logoColor=white" alt="MT5">
+  <img src="https://img.shields.io/badge/AI-Gemini_•_OpenAI_•_Claude-7209B7?style=for-the-badge&logo=openai&logoColor=white" alt="AI">
+</p>
+
+<br>
+
 <div align="center">
-  <h1>🤖 Auto Trade AI</h1>
-  <p><strong>Bot Trading Otomatis berbasis AI untuk MetaTrader 5</strong></p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=gradient&customColorList=0,2,4,6,8&text=AUTO%20TRADE%20AI&fontSize=60&fontAlignY=35&desc=Robot%20Trading%20Cerdas%20berbasis%20AI%20%E2%80%A2%20MetaTrader%205&descAlignY=55&fontColor=ffffff" width="100%"/>
 </div>
 
----
+<br>
 
-## ✨ Fitur
+<p align="center">
+  <b>Analisis pasar real-time, eksekusi otomatis, dan manajemen risiko cerdas</b><br>
+  <i>— dalam satu dashboard —</i>
+</p>
 
-| Fitur | Deskripsi |
-|-------|-----------|
-| **Analisis AI Multi-Provider** | Google Gemini, OpenAI, DeepSeek, Claude — auto failover jika salah satu error |
-| **Dashboard Web Real-Time** | Monitoring harga, equity, posisi terbuka, grafik TradingView, log AI |
-| **Trading Otomatis** | Eksekusi BUY/SELL berdasarkan sinyal AI tanpa campur tangan manual |
-| **Chart Mapping** | Analisis teknikal dengan gambar chart multi-timeframe (M15, H1, H4, D1) |
-| **Risk Management** | Target harian, max loss, lot size otomatis/manual, SL/TP |
-| **Multi-Session** | Indikator sesi Sydney, Tokyo, London, New York |
-| **Akses dari HP** | Dashboard bisa dibuka dari perangkat mobile di jaringan yang sama |
-| **Dark/Light Mode** | Tampilan nyaman di berbagai kondisi cahaya |
-| **Sistem Aktivasi HWID** | Lisensi terikat perangkat untuk keamanan maksimal |
-| **Ekspor PDF** | Riwayat trading bisa diekspor ke PDF |
+<br>
 
----
+<p align="center">
+  Didukung oleh <b>6 engine AI</b> dengan failover otomatis:<br>
+  <code>Gemini</code> • <code>OpenAI</code> • <code>Claude</code> • <code>DeepSeek</code> • <code>Ollama</code> • <code>Universal API</code>
+</p>
 
-## 📦 Persyaratan Sistem
-
-| Komponen | Keterangan |
-|----------|------------|
-| **OS** | Windows 10 / 11 (64-bit) |
-| **MetaTrader 5** | Sudah terinstall dan memiliki akun trading |
----
-
-## 🚀 Cara Menjalankan
-
-1. **Ekstrak** folder `AutoTradeAI` ke lokasi mana saja (disarankan di drive C: atau D:)
-2. **Jalankan** `AutoTradeAI.exe` — klik dua kali
-3. **Dashboard** akan terbuka otomatis di browser: **http://localhost:8000**
-
-> ⚠️ Jika tidak terbuka otomatis, buka manual `http://localhost:8000` di browser.
+<br>
+<br>
 
 ---
 
-## 🔧 Pengaturan Awal
+## 🚀 Fitur Unggulan
 
-### 1. Konfigurasi MetaTrader 5
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧠 Multi-Engine AI</h3>
+      <p>6 provider AI dengan <b>failover otomatis</b>. Jika satu terkena rate-limit, bot pindah ke yang lain tanpa interupsi. Kamu bisa pakai banyak API key sekaligus.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📊 Analisis Multi-Timeframe</h3>
+      <p>Bot membaca <b>M15, H1, H4, dan D1</b> bersamaan. Chart candlestick dengan Fibonacci, support/resistance, dan swing points dikirim ke AI untuk analisis visual.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🛡️ Risk Management Bawaan</h3>
+      <p><b>Daily target 3%</b>, <b>max loss 5%</b>, auto lot sizing, proteksi over-trading. Kamu bisa tidur nyenyak tanpa khawatir.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>💬 Chat dengan AI</h3>
+      <p>Mau tanya analisis, ubah parameter, tutup posisi, atau gambar support/resistance di chart? <b>Cukup ketik di chat.</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ Auto & Manual Mode</h3>
+      <p>AI bisa <b>eksekusi otomatis</b> 24/7, atau kamu review dulu setiap sinyal. Kendali penuh tetap di tanganmu.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📱 Dashboard Web</h3>
+      <p>Tampilan modern dengan TradingView chart, dark/light mode, dan <b>bisa diakses dari HP</b> dalam jaringan yang sama.</p>
+    </td>
+  </tr>
+</table>
 
-Sebelum menjalankan, pastikan:
-- MetaTrader 5 sudah terinstall dan **login** ke akun trading Anda
-- Jalankan MetaTrader 5 **sebagai Administrator** (klik kanan → Run as Administrator)
-
-### 2. Atur API Key di Dashboard
-
-1. Buka menu **Pengaturan** di dashboard
-2. Isi **Gemini API Key** (wajib) — daftar gratis di Google AI Studio
-3. Isi **MT5 Path** sesuai lokasi MetaTrader 5 broker Anda
-4. Atur **Symbol** (pair trading) dan **Timeframe** sesuai keinginan
-5. Klik **Simpan**
-
-### 3. Aktivasi Lisensi
-
-1. Buka dashboard — modal aktivasi akan muncul
-2. **Copy HWID** yang tampil
-3. Klik paket sewa (1, 3, 6, 12 bulan, atau lifetime)
-4. Hubungi **Telegram: [@ilmanalif](https://t.me/ilmanalif)** — kirimkan HWID Anda
-5. Setelah pembayaran, masukkan **kode aktivasi** yang dikirim developer
-6. Klik **Aktifkan** — bot siap digunakan
-
-### 4. Mulai Bot
-
-1. Klik tombol **Connect** di dashboard untuk menghubungkan ke MT5
-2. Klik tombol **Start Bot** — bot akan mulai menganalisa dan trading otomatis
-
----
-
-## 🖥️ Tampilan Dashboard
-
-| Menu | Fungsi |
-|------|--------|
-| **Dasbor Analisa** | Grafik TradingView, posisi terbuka, analisa market, sinyal AI, log terminal |
-| **Pengaturan** | Konfigurasi strategi, pair, timeframe, risk management, API Keys, MT5 Path |
-| **Riwayat** | History trading dengan grafik performa, filter periode, ekspor PDF |
+<br>
 
 ---
 
-## ⚙️ Parameter Penting
-
-| Parameter | Default | Keterangan |
-|-----------|---------|------------|
-| Symbol | XAUUSD | Pair trading (EURUSD, GBPUSD, dll) |
-| Timeframe | H1 | M5, M15, H1, H4, D1 |
-| Target Harian | 10% | Bot berhenti jika target tercapai |
-| Max Loss Harian | 5% | Bot berhenti jika loss mencapai batas |
-| Lot Mode | Auto Safe | Menyesuaikan lot berdasarkan equity |
-| Volume | 0.01 | Lot tetap (jika mode Fixed) |
-| Stop Loss | 50 pip | SL otomatis dari AI atau manual |
-| Take Profit | 100 pip | TP otomatis dari AI atau manual |
-
----
-
-## 🔐 Status Lisensi
-
-Sidebar menampilkan sisa masa aktivasi dengan indikator warna:
-- 🟢 **Hijau** — Lisensi aktif (≥7 hari)
-- 🟡 **Kuning** — Lisensi akan habis (<7 hari)
-- 🔴 **Merah** — Lisensi akan segera habis (<3 hari)
-
-> Bot akan berhenti otomatis jika lisensi kedaluwarsa.
-
----
-
-## ❓ Troubleshooting
-
-| Masalah | Solusi |
-|---------|--------|
-| **MT5 tidak terhubung** | Pastikan MT5 sudah login dan jalankan sebagai Administrator. Cek MT5 Path di pengaturan dashboard. |
-| **API Key error** | Pastikan API key valid. Aktifkan Generative Language API di Google Cloud Console. |
-| **Aktivasi gagal** | Pastikan kode 64 karakter. HWID harus sama dengan saat pembuatan kode. |
-| **Port 8000 dipakai** | Matikan aplikasi lain yang menggunakan port 8000. |
-| **Error saat startup** | Jalankan `AutoTradeAI.exe` sebagai Administrator. |
-| **Bot tidak trading** | Cek apakah target harian sudah tercapai. Cek koneksi MT5 dan API Key. |
-
----
-
-## 📱 Kontak
-
-- **Telegram**: [@ilmanalif](https://t.me/ilmanalif)
-- **Website**: [saya.ilmanalif.my.id](https://saya.ilmanalif.my.id)
-
----
+## ⚙️ Cara Kerja
 
 <div align="center">
-  <p>
-    <strong>Auto Trade AI</strong> — © 2024 ilmanalif. All rights reserved.<br>
-    <sub>Proprietary software. Unauthorized copying, modification, or distribution prohibited.</sub>
-  </p>
+
+```
+┌─────────────┐     ┌─────────────┐     ┌──────────────┐
+│  MetaTrader │◄───►│  Auto Trade │◄───►│   AI Engine  │
+│      5      │     │  AI Server  │     │  (6 Provider)│
+│             │     │ :8000       │     │              │
+└─────────────┘     └──────┬──────┘     └──────────────┘
+                           │
+                    ┌──────▼──────┐
+                    │  Dashboard  │
+                    │  (Browser)  │
+                    └─────────────┘
+
+```
+
+</div>
+
+<p align="center">
+  <b>1.</b> Bot baca data pasar (candle, RSI, volume, posisi terbuka) ✦
+  <b>2.</b> Bot generate chart multi-timeframe ✦
+  <b>3.</b> Data dikirim ke AI ✦
+  <b>4.</b> AI return keputusan: <code>BUY</code> / <code>SELL</code> / <code>HOLD</code> ✦
+  <b>5.</b> Eksekusi otomatis atau menunggu persetujuanmu
+</p>
+
+<br>
+
+---
+
+## 🧠 Engine AI yang Didukung
+
+| Provider | Model | Tipe Akses |
+|----------|-------|------------|
+| <img src="https://img.shields.io/badge/-Google%20Gemini-4285F4?style=flat-square&logo=google&logoColor=white"> | `gemini-2.5-pro` → `gemini-2.0-flash` | API Key |
+| <img src="https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white"> | `gpt-4o-mini` | API Key |
+| <img src="https://img.shields.io/badge/-DeepSeek-4F6BED?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MSAwLTgtMy41OS04LThzMy41OS04IDgtOCA4IDMuNTkgOCA4LTMuNTkgOC04IDh6IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==&logoColor=white"> | `deepseek-chat` | API Key |
+| <img src="https://img.shields.io/badge/-Anthropic%20Claude-D97706?style=flat-square&logo=anthropic&logoColor=white"> | `claude-3-haiku` | API Key |
+| <img src="https://img.shields.io/badge/-Ollama%20(Lokal)-000000?style=flat-square&logo=docker&logoColor=white"> | Bebas (`llama3`, `mistral`, dll) | Server Lokal |
+| <img src="https://img.shields.io/badge/-Universal%20API-6C63FF?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MSAwLTgtMy41OS04LThzMy41OS04IDgtOCA4IDMuNTkgOCA4LTMuNTkgOC04IDh6IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==&logoColor=white"> | Bebas | OpenAI-compatible |
+
+<br>
+
+---
+
+## 🔒 Risk Management
+
+```
+ ╔══════════════════════════════════════════╗
+ ║  Daily Target    ████████░░  3%          ║
+ ║  Max Daily Loss  ██████████████░░░  5%   ║
+ ║  Auto Lot        ✅ Active               ║
+ ║  Auto Trade      ⚡ Optional              ║
+ ╚══════════════════════════════════════════╝
+```
+
+Bot berhenti otomatis saat target harian tercapai atau loss mencapai batas. Aman.
+
+<br>
+
+---
+
+## 🚀 Mulai dalam 5 Menit
+
+<table>
+  <tr>
+    <td align="center" width="20%"><b>1</b></td>
+    <td width="80%">Install <b>MetaTrader 5</b> dan login ke akun trading kamu</td>
+  </tr>
+  <tr>
+    <td align="center" width="20%"><b>2</b></td>
+    <td width="80%">Dapatkan <b>API key</b> dari provider AI (minimal satu, gratis pun bisa)</td>
+  </tr>
+  <tr>
+    <td align="center" width="20%"><b>3</b></td>
+    <td width="80%">Jalankan <code>python run.py</code> atau buka <code>AutoTradeAI.exe</code></td>
+  </tr>
+  <tr>
+    <td align="center" width="20%"><b>4</b></td>
+    <td width="80%">Buka <b>http://localhost:8000</b> di browser kamu</td>
+  </tr>
+  <tr>
+    <td align="center" width="20%"><b>5</b></td>
+    <td width="80%">Masukkan API key, koneksikan MT5, atur strategi, klik <b>Start Bot</b></td>
+  </tr>
+</table>
+
+<br>
+
+<p align="center">
+  <b>Selesai.</b> AI mulai menganalisis pasar untukmu.
+</p>
+
+<br>
+
+---
+
+<p align="center">
+  <i>Dibangun untuk trader Indonesia.</i><br>
+  <b>Tidak perlu coding. Tidak perlu pengalaman AI.</b><br>
+  Cukup jalankan dan biarkan AI bekerja.
+</p>
+
+<br>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=0,2,4,6,8&section=footer" width="100%"/>
 </div>
